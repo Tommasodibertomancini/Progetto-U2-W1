@@ -56,7 +56,7 @@ button {
   align-items: center;
   font-size: 1.2em;
   padding: 0 0 0 8%;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 h1 {
@@ -79,13 +79,67 @@ p {
   font-size: 0.8em;
 }
 
-#trending {
+#titoloTrends {
   display: flex;
   align-items: center;
   padding: 0 8%;
   font-size: smaller;
 }
 
-#trend {
-    
+#trending {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 8%;
+  font-size: 0.9em;
+  border-bottom: 1px solid #191919;
+  margin-bottom: 50px;
 }
+
+.trends {
+  padding: 5px 35px;
+  position: relative;
+  width: 25%;
+  height: 180px;
+  
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-weight: 500;
+  font-size: 0.9em;
+  margin-left: 15px;
+  cursor:pointer;
+}
+
+.author img {
+  border-radius: 50%;
+  width: 25px;
+}
+
+.number {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font-size: 2.5em;
+  font-weight: 900;
+  color: #e5e6e5;
+  margin: 0;
+}
+
+.newsName{
+    display: flex;
+    align-items: stretch;
+    margin-left: 15px;
+    cursor:pointer;
+}
+
+.newsDate {
+  color: gray;
+  letter-spacing: 0;
+  display: flex;
+  align-items: end;
+  margin-left: 15px;
+  }
