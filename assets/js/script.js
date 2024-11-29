@@ -1,4 +1,5 @@
 const listM = document.querySelectorAll('g[stroke-linecap=butt]');
+
 window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
     const getStartedButton = document.querySelector('#getStarted button');

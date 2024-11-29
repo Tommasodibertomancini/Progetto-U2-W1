@@ -61,7 +61,7 @@ button {
 
 h1 {
   font-family: 'Spectral', serif;
-  font-size: 4em;
+  font-size: 5em;
   font-weight: 400;
   letter-spacing: -5px;
   margin: 0;
@@ -130,6 +130,7 @@ h1 {
 }
 
 .newsName {
+  font-size: 1.3em;
   display: flex;
   align-items: stretch;
   margin-left: 15px;
@@ -348,33 +349,33 @@ aside h2 {
   }
   #containerLeft,
   #containerRight {
-      width: 100%;
+    width: 100%;
   }
 
   #containerRight {
-      order: -1;
-      position: static;
+    order: -1;
+    position: static;
   }
 
-#finalLink {
+  #finalLink {
     margin-bottom: 0;
-}
+  }
 
   #newstext {
-      width: 70%;
-      position: relative;
+    width: 70%;
+    position: relative;
   }
 
   #newsImage {
-      width: 27%;
+    width: 27%;
   }
 
   .newsDate {
-      display: flex;
-      justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
   }
 
   .newsDate img {
-      display: none;
+    display: none;
   }
 }
