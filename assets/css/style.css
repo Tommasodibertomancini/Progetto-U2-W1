@@ -67,16 +67,16 @@ h1 {
   margin: 0;
 }
 
-p {
+#heroSection p {
   width: 70%;
 }
 
 #startReading {
-  width: 35%;
+  width: 40%;
   height: 2.5em;
   border-radius: 10%/50%;
   margin-top: 2em;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 #titoloTrends {
@@ -84,6 +84,7 @@ p {
   align-items: center;
   padding: 0 8%;
   font-size: smaller;
+  letter-spacing: 1.2px;
 }
 
 #trending {
@@ -101,7 +102,6 @@ p {
   position: relative;
   width: 25%;
   height: 180px;
-  
 }
 
 .author {
@@ -111,7 +111,7 @@ p {
   font-weight: 500;
   font-size: 0.9em;
   margin-left: 15px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .author img {
@@ -122,18 +122,18 @@ p {
 .number {
   position: absolute;
   top: 10px;
-  left: 0;
+  left: -8px;
   font-size: 2.5em;
   font-weight: 900;
   color: #e5e6e5;
   margin: 0;
 }
 
-.newsName{
-    display: flex;
-    align-items: stretch;
-    margin-left: 15px;
-    cursor:pointer;
+.newsName {
+  display: flex;
+  align-items: stretch;
+  margin-left: 15px;
+  cursor: pointer;
 }
 
 .newsDate {
@@ -142,4 +142,243 @@ p {
   display: flex;
   align-items: end;
   margin-left: 15px;
+}
+
+/* ----------MAIN SECTION ----------------*/
+
+.badge {
+  background-color: rgb(228, 228, 228);
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+#mainSection {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 1600px;
+  padding: 0 8%;
+}
+
+#containerLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 58%;
+  height: 1600px;
+}
+
+.news {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+}
+
+#newsImage {
+  width: 30%;
+}
+
+#newsImage img {
+  max-width: 100%;
+}
+
+.newsText {
+  width: 60%;
+  position: relative;
+}
+
+.bookmark {
+  position: absolute;
+  bottom: 0;
+  right: -10px;
+}
+
+.newsDesc {
+  color: gray;
+}
+
+/* ---------- ASIDE ----------*/
+
+#containerRight {
+  width: 38%;
+  position: sticky;
+  top: 100px;
+}
+
+#discover {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+#discover a {
+  font-size: 0.9em;
+  color: gray;
+  border: 1px solid gray;
+  padding: 8px 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 5px;
+  text-decoration: none;
+}
+
+#finalLink {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#finalLink a {
+  color: gray;
+  font-size: 0.9em;
+  padding: 3px 10px;
+  margin: 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#finalLink p {
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+aside h2 {
+  font-size: 1.3em;
+  letter-spacing: 0.1em;
+}
+
+@media screen and (max-width: 1199px) {
+  header,
+  #heroSection,
+  #titoloTrends,
+  #trending,
+  #mainSection {
+    padding: 0 30px;
   }
+
+  nav {
+    width: 60%;
+  }
+
+  #heroSection {
+    justify-content: flex-start;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 0;
+  }
+
+  #title {
+    width: 80%;
+  }
+
+  .trends {
+    width: 39%;
+  }
+
+  #containerRight {
+    order: -1;
+    position: static;
+  }
+
+  #discover {
+    justify-content: flex-start;
+  }
+
+  #finalLink {
+    margin-bottom: 15px;
+  }
+
+  #containerLeft,
+  #containerRight {
+    width: 90%;
+  }
+
+  #mainSection {
+    flex-wrap: nowrap;
+  }
+
+  .news {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header,
+  #heroSection,
+  #titoloTrends,
+  #trending,
+  #mainSection {
+    padding: 0 18px;
+  }
+
+  ul li:first-child,
+  ul li:nth-child(2),
+  ul li:nth-child(3),
+  #magicM {
+    display: none;
+  }
+
+  nav {
+    width: 30%;
+  }
+
+  #heroSection {
+    padding: 50px 18px;
+  }
+
+  #title {
+    width: 70%;
+  }
+
+  #trending {
+    padding-bottom: 50px;
+  }
+
+  .trends {
+    width: 100%;
+    height: 120px;
+    margin: 10px 0;
+  }
+
+  .news {
+    margin-bottom: 30px;
+  }
+
+  #mainSection {
+    flex-wrap: nowrap;
+  }
+  #containerLeft,
+  #containerRight {
+      width: 100%;
+  }
+
+  #containerRight {
+      order: -1;
+      position: static;
+  }
+
+#finalLink {
+    margin-bottom: 0;
+}
+
+  #newstext {
+      width: 70%;
+      position: relative;
+  }
+
+  #newsImage {
+      width: 27%;
+  }
+
+  .newsDate {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .newsDate img {
+      display: none;
+  }
+}
