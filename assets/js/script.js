@@ -9,4 +9,4 @@ function randomM() {
   }
 }
 
-setInterval(randomM, 40);
+setInterval(randomM, 30);
