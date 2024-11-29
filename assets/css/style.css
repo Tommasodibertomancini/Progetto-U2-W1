@@ -1,0 +1,91 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', serif;
+}
+/* ------------ HEADER ------------*/
+header {
+  background-color: #ffc017;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+  border-bottom: 1px solid #191919;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 1s;
+}
+
+nav {
+  width: 40%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8em;
+  padding-inline-start: 0;
+  margin-inline-start: 0;
+  list-style: none;
+}
+
+nav ul li {
+  cursor: pointer;
+}
+
+button {
+  background-color: #191919;
+  color: white;
+  border-radius: 30px;
+  padding: 10px 20px;
+  transition: all 1s;
+  cursor: pointer;
+}
+
+/* ------------ MAIN --------------*/
+
+#heroSection {
+  background-color: #ffc017;
+  border-bottom: 1px solid #191919;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2em;
+  padding: 0 0 0 8%;
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-family: 'Spectral', serif;
+  font-size: 4em;
+  font-weight: 400;
+  letter-spacing: -5px;
+  margin: 0;
+}
+
+p {
+  width: 70%;
+}
+
+#startReading {
+  width: 35%;
+  height: 2.5em;
+  border-radius: 10%/50%;
+  margin-top: 2em;
+  font-size: 0.8em;
+}
+
+#trending {
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+  font-size: smaller;
+}
+
+#trend {
+    
+}
